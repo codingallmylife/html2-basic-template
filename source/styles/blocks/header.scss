@@ -1,5 +1,73 @@
+
 .header {
-  padding: 10px 15px;
-  color: #ffffff;
-  background-color: #663399;
+  color: $base-white;
+  background-color: $base-primary;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 15px $side-padding-mobile 13px;
+}
+
+.header__toggle {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  background-color: $transparent;
+  background-image: linear-gradient(to right, $base-white 17px, transparent 17px); /* Рисуем короткую среднюю полоску (17px) с помощью фона */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 17px 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__toggle::before,
+.header__toggle::after {
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  content: "";
+  background-color: $base-white;
+}
+
+.header__toggle::before {
+  top: 4px;
+}
+
+.header__toggle::after {
+  bottom: 4px;
+}
+
+.header__logo {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.header__logo-image {
+  display: block;
+  width: 142px;
+  height: 42px;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__phone {
+  display: block;
+  flex: 0 0 100%;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: right;
+  text-decoration: none;
+  white-space: nowrap;
+  color: $base-white;
 }

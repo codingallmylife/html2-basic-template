@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="#" rel="preload" type="font/woff2" as="font">
-    <link href="styles/styles.css" rel="stylesheet">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-      <img src="./icons/stack.svg#htmlacademy-logo" width="300" height="150" alt="Логотип HTML Academy">
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link href="styles/styles.css" rel="stylesheet">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="images/logotype.svg" width="142" height="42" alt="LIFETOUR.">
+      </a>
+      <nav class="header__navigation" id="menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#tours">Туры</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#training">Обучение</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">LIFETOUR — путешествия</h1>
+    <section class="promo"></section>
+    <section class="tours"></section>
+    <section class="about"></section>
+    <section class="training"></section>
+    <section class="questions"></section>
+    <section class="contacts"></section>
+  </main>
+
+  <footer class="footer">
+    <!-- Здесь будет подвал -->
+  </footer>
+</body>
+
 </html>

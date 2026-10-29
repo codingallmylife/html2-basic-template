@@ -1,0 +1,11 @@
+@mixin font-face($font-weight, $file-name, $font-family: "Montserrat", $font-style: normal, $font-path: "../../fonts/") {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src:
+      url("#{$font-path}#{$file-name}.woff2") format("woff2"),
+      url("#{$font-path}#{$file-name}.woff") format("woff");
+  }
+}

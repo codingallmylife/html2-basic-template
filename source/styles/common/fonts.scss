@@ -1,1 +1,7 @@
 /* здесь подключите шрифты */
+@include font-face(300, "montserrat-light");
+@include font-face(400, "montserrat-regular");
+@include font-face(500, "montserrat-medium");
+@include font-face(600, "montserrat-semibold");
+@include font-face(700, "montserrat-bold");
+@include font-face(800, "montserrat-extrabold");
