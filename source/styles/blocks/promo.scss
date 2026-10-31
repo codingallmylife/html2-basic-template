@@ -1,3 +1,152 @@
 .promo {
+  position: relative;
   overflow: hidden; /* Чтобы слайды не вылезали */
+}
+
+.promo__slider {
+  position: relative;
+}
+
+.promo__list {
+  position: relative;
+}
+
+.promo__item {
+  position: relative; /* Чтобы позиционировать контент внутри */
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: $base-lighter; /* Подстраховочный фон - чтобы не было белого шрифта на белом фоне */
+}
+
+.promo__item--active {
+  display: block; /* Показываем только активный слайд */
+}
+
+.promo__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.promo__content {
+  position: absolute;
+  top: 145px;
+  left: 50%;
+  width: $container-width-mobile;
+  text-align: center;
+  color: $base-white;
+  transform: translateX(-50%);
+}
+
+.promo__item--slide2 .promo__content {
+  top: 135px;
+}
+
+.promo__item--slide3 .promo__content {
+  top: 121px;
+}
+
+.promo__item--slide-2::after {
+  display: none;
+}
+
+.promo__title {
+  margin: 0 0 15px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.promo__description {
+  margin: 0 0 60px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.promo__info {
+  display: none;
+}
+
+.promo__pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-50%);
+}
+
+.promo__bullet {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: $transparent;
+  border: 1px solid $base-white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo__bullet--active {
+  background-color: $base-white;
+}
+
+@media (width >= 768px) {
+  .promo__content {
+    top: 342px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $container-width-tablet;
+  }
+
+  .promo__item--slide2 .promo__content {
+    top: 137px;
+  }
+
+  .promo__item--slide3 .promo__content {
+    top: 342px;
+  }
+
+  .promo__item--slide2::after {
+    position: absolute;
+    top: 472px;
+    left: 50%;
+    display: block;
+    width: 442px;
+    height: 365px;
+    content: "";
+    background-image: url("../../images/promo/polaroids-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  @media (resolution >= 2dppx) {
+    .promo__item--slide2::after {
+      background-image: url("../../images/promo/polaroids-tablet@2x.png");
+    }
+  }
+
+  .promo__title {
+    margin: 0 0 13px;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .promo__description {
+    width: 500px;
+    margin: 0 0 37px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .promo__bullet {
+    width: 20px;
+    height: 20px;
+  }
 }

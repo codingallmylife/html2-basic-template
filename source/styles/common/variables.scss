@@ -1,5 +1,6 @@
 /* здесь используйте глобальные переменные */
 $base-primary: #0266c1;
+$base-lighter: #0286ff;
 $base-white: #ffffff;
 $base-black: #2d383f;
 $transparent: rgba($base-white, 0);
@@ -9,3 +10,6 @@ $desktop-width: 1440px;
 $side-padding-mobile: 15px;
 $side-padding-tablet: 45px;
 $side-padding-desktop: 120px;
+$container-width-mobile: calc($mobile-width - $side-padding-mobile*2);
+$container-width-tablet: calc($tablet-width - $side-padding-tablet*2);
+$container-width-desktop: calc($desktop-width - $side-padding-desktop*2);
