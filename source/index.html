@@ -21,26 +21,28 @@
         <img class="header__logo-image" src="images/logotype.svg" width="142" height="42" alt="LIFETOUR.">
       </a>
       <nav class="header__navigation" id="menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#tours">Туры</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#training">Обучение</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#about">О нас</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="header__list list-reset">
+            <li class="header__item">
+              <a class="header__link" href="#tours">Туры</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#training">Обучение</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#about">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
     </div>
@@ -48,7 +50,69 @@
 
   <main class="main">
     <h1 class="visually-hidden">LIFETOUR — путешествия</h1>
-    <section class="promo"></section>
+
+    <section class="promo">
+      <div class="container">
+        <div class="promo__slider">
+          <ul class="promo__list list-reset">
+            <!-- Слайд 1: Кавказ -->
+            <li class="promo__item promo__item--active">
+              <div class="promo__content">
+                <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
+                <p class="promo__description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                <button class="promo__button button" type="button">Смотреть тур</button>
+              </div>
+              <div class="promo__info">
+                <span class="promo__info-item promo__info-item--duration">6 дней/ночей</span>
+                <span class="promo__info-item promo__info-item--difficulty">Высокая сложность</span>
+              </div>
+            </li>
+            <!-- Слайд 2: Камчатка -->
+            <li class="promo__item">
+              <div class="promo__content">
+                <h2 class="promo__title">Невероятная природа Камчатки</h2>
+                <p class="promo__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                <button class="promo__button button" type="button">Смотреть тур</button>
+              </div>
+              <!-- Декоративные фотографии-полароиды (только для этого слайда) -->
+              <div class="promo__decor" aria-hidden="true">
+                <img class="promo__decor-image" src="images/polaroid-1.png" width="150" height="150" alt="">
+                <img class="promo__decor-image" src="images/polaroid-2.png" width="150" height="150" alt="">
+              </div>
+              <div class="promo__info">
+                <span class="promo__info-item promo__info-item--duration">9 дней/ночей</span>
+                <span class="promo__info-item promo__info-item--difficulty">Средняя сложность</span>
+              </div>
+            </li>
+            <!-- Слайд 3: Алтай -->
+            <li class="promo__item">
+              <div class="promo__content">
+                <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
+                <p class="promo__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <button class="promo__button button" type="button">Смотреть тур</button>
+              </div>
+              <div class="promo__info">
+                <span class="promo__info-item promo__info-item--duration">8 дней/ночей</span>
+                <span class="promo__info-item promo__info-item--difficulty">Лёгкая сложность</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Пагинация (буллеты) -->
+        <div class="promo__pagination">
+          <button class="promo__bullet promo__bullet--active" type="button">
+            <span class="visually-hidden">Слайд 1</span>
+          </button>
+          <button class="promo__bullet" type="button">
+            <span class="visually-hidden">Слайд 2</span>
+          </button>
+          <button class="promo__bullet" type="button">
+            <span class="visually-hidden">Слайд 3</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section class="tours"></section>
     <section class="about"></section>
     <section class="training"></section>

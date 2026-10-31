@@ -3,3 +3,17 @@
   margin: 0 auto;
   padding: 0 $side-padding-mobile;
 }
+
+@media (width >= 768px) {
+  .container {
+    width: $tablet-width;
+    padding: 0 $side-padding-tablet;
+  }
+}
+
+@media (width >= 1440px) {
+  .container {
+    width: $desktop-width;
+    padding: 0 $side-padding-desktop;
+  }
+}
