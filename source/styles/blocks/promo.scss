@@ -3,8 +3,8 @@
   overflow: hidden; /* Чтобы слайды не вылезали */
 }
 
-.promo__slider {
-  position: relative;
+.promo__container {
+  height: 568px;
 }
 
 .promo__list {
@@ -66,6 +66,19 @@
   line-height: 20px;
 }
 
+.promo__button {
+  display: inline-block;
+  width: 180px;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $base-white;
+  background-color: $base-primary;
+  border: none;
+}
+
 .promo__info {
   display: none;
 }
@@ -74,6 +87,7 @@
   position: absolute;
   bottom: 40px;
   left: 50%;
+  z-index: 5;
   display: flex;
   gap: 20px;
   transform: translateX(-50%);
@@ -94,6 +108,10 @@
 }
 
 @media (width >= 768px) {
+  .promo__container {
+    height: 1034px;
+  }
+
   .promo__content {
     top: 342px;
     display: flex;
@@ -108,6 +126,24 @@
 
   .promo__item--slide3 .promo__content {
     top: 342px;
+  }
+
+  .promo__title {
+    margin: 0 0 13px;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .promo__description {
+    width: 500px;
+    margin: 0 0 37px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .promo__bullet {
+    width: 20px;
+    height: 20px;
   }
 
   .promo__item--slide2::after {
@@ -131,22 +167,93 @@
       background-image: url("../../images/promo/polaroids-tablet@2x.png");
     }
   }
+}
+
+@media (width >= 1440px) {
+  .promo__container {
+    height: 800px;
+  }
+
+  .promo__content {
+    top: 199px;
+    display: block;
+    width: 100%;
+    max-width: $desktop-width;
+    padding-left: $side-padding-desktop;
+    text-align: left;
+  }
+
+  .promo__item--slide2 .promo__content,
+  .promo__item--slide3 .promo__content {
+    top: 200px;
+  }
 
   .promo__title {
-    margin: 0 0 13px;
-    font-size: 56px;
-    line-height: 56px;
+    width: 945px;
+    margin: 0 0 24px;
+    font-size: 77px;
+    line-height: 77px;
   }
 
   .promo__description {
-    width: 500px;
+    width: 465px;
     margin: 0 0 37px;
-    font-size: 17px;
-    line-height: 24px;
   }
 
-  .promo__bullet {
-    width: 20px;
-    height: 20px;
+  .promo__pagination {
+    right: auto;
+    bottom: 92px;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: $desktop-width;
+    padding-right: $side-padding-desktop;
+  }
+
+  .promo__info {
+    position: absolute;
+    top: 676px;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: $desktop-width;
+    padding-left: $side-padding-desktop;
+    transform: translateX(-50%);
+  }
+
+  .promo__info-item {
+    padding: 12px 19px 14px 39px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $base-white;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 12px 12px;
+    border: 1px solid rgba($base-white, 0.5);
+  }
+
+  .promo__info-item--duration {
+    background-image: url("../../icons/stack.svg#moon");
+  }
+
+  .promo__info-item--difficulty {
+    background-image: url("../../icons/stack.svg#level");
+  }
+
+  .promo__item--slide2::after {
+    top: 187px;
+    right: 120px;
+    left: auto;
+    width: 410px;
+    height: 459px;
+    background-image: url("../../images/promo/polaroids-desktop@1x.png");
+    transform: none;
+  }
+
+  @media (resolution >= 2dppx) {
+    .promo__item--slide2::after {
+      background-image: url("../../images/promo/polaroids-desktop@2x.png");
+    }
   }
 }

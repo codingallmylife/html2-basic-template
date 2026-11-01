@@ -51,73 +51,71 @@
   <main class="main">
     <h1 class="visually-hidden">LIFETOUR — путешествия</h1>
 
-    <section class="promo">
-      <div class="promo__slider">
-        <ul class="promo__list list-reset">
-          <!-- Слайд 1: Кавказ -->
-          <li class="promo__item promo__item--active">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide1-desktop@1x.webp 1x, images/promo/slide1-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide1-tablet@1x.webp 1x, images/promo/slide1-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="images/promo/slide1-mobile@1x.webp 1x, images/promo/slide1-mobile@2x.webp 2x">
-              <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide1-desktop@1x.jpg 1x, images/promo/slide1-desktop@2x.jpg 2x">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide1-tablet@1x.jpg 1x, images/promo/slide1-tablet@2x.jpg 2x">
-              <img class="promo__image" src="images/promo/slide1-mobile@1x.jpg" srcset="images/promo/slide1-mobile@2x.jpg 2x" width="320" height="568" alt="Горы Кавказа.">
-            </picture>
-            <div class="promo__content">
-              <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
-              <p class="promo__description">В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
-              <button class="promo__button button" type="button">Смотреть тур</button>
-            </div>
-            <div class="promo__info">
-              <span class="promo__info-item promo__info-item--duration">6 дней/ночей</span>
-              <span class="promo__info-item promo__info-item--difficulty">Высокая сложность</span>
-            </div>
-          </li>
+    <section class="promo promo__container">
+      <ul class="promo__list list-reset">
+        <!-- Слайд 1: Кавказ -->
+        <li class="promo__item promo__item--active">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide1-desktop@1x.webp 1x, images/promo/slide1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide1-tablet@1x.webp 1x, images/promo/slide1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/promo/slide1-mobile@1x.webp 1x, images/promo/slide1-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide1-desktop@1x.jpg 1x, images/promo/slide1-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide1-tablet@1x.jpg 1x, images/promo/slide1-tablet@2x.jpg 2x">
+            <img class="promo__image" src="images/promo/slide1-mobile@1x.jpg" srcset="images/promo/slide1-mobile@2x.jpg 2x" width="320" height="568" alt="Горы Кавказа.">
+          </picture>
+          <div class="promo__content">
+            <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
+            <p class="promo__description">В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
+            <button class="promo__button button" type="button">Смотреть тур</button>
+          </div>
+          <div class="promo__info">
+            <span class="promo__info-item promo__info-item--duration">6 дней/5 ночей</span>
+            <span class="promo__info-item promo__info-item--difficulty">Высокая сложность</span>
+          </div>
+        </li>
 
-          <!-- Слайд 2: Камчатка -->
-          <li class="promo__item promo__item--slide2">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide2-desktop@1x.webp 1x, images/promo/slide2-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide2-tablet@1x.webp 1x, images/promo/slide2-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="images/promo/slide2-mobile@1x.webp 1x, images/promo/slide2-mobile@2x.webp 2x">
-              <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide2-desktop@1x.jpg 1x, images/promo/slide2-desktop@2x.jpg 2x">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide2-tablet@1x.jpg 1x, images/promo/slide2-tablet@2x.jpg 2x">
-              <img class="promo__image" src="images/promo/slide2-mobile@1x.jpg" srcset="images/promo/slide2-mobile@2x.jpg 2x" width="320" height="568" alt="Природа Камчатки.">
-            </picture>
-            <div class="promo__content">
-              <h2 class="promo__title">Невероятная природа Камчатки</h2>
-              <p class="promo__description">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в мире.</p>
-              <button class="promo__button button" type="button">Смотреть тур</button>
-            </div>
-            <div class="promo__info">
-              <span class="promo__info-item promo__info-item--duration">9 дней/ночей</span>
-              <span class="promo__info-item promo__info-item--difficulty">Средняя сложность</span>
-            </div>
-          </li>
+        <!-- Слайд 2: Камчатка -->
+        <li class="promo__item promo__item--slide2">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide2-desktop@1x.webp 1x, images/promo/slide2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide2-tablet@1x.webp 1x, images/promo/slide2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/promo/slide2-mobile@1x.webp 1x, images/promo/slide2-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide2-desktop@1x.jpg 1x, images/promo/slide2-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide2-tablet@1x.jpg 1x, images/promo/slide2-tablet@2x.jpg 2x">
+            <img class="promo__image" src="images/promo/slide2-mobile@1x.jpg" srcset="images/promo/slide2-mobile@2x.jpg 2x" width="320" height="568" alt="Природа Камчатки.">
+          </picture>
+          <div class="promo__content">
+            <h2 class="promo__title">Невероятная природа Камчатки</h2>
+            <p class="promo__description">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в мире.</p>
+            <button class="promo__button button" type="button">Смотреть тур</button>
+          </div>
+          <div class="promo__info">
+            <span class="promo__info-item promo__info-item--duration">9 дней/10 ночей</span>
+            <span class="promo__info-item promo__info-item--difficulty">Средняя сложность</span>
+          </div>
+        </li>
 
-          <!-- Слайд 3: Алтай -->
-          <li class="promo__item promo__item--slide3">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide3-desktop@1x.webp 1x, images/promo/slide3-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide3-tablet@1x.webp 1x, images/promo/slide3-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="images/promo/slide3-mobile@1x.webp 1x, images/promo/slide3-mobile@2x.webp 2x">
-              <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide3-desktop@1x.jpg 1x, images/promo/slide3-desktop@2x.jpg 2x">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide3-tablet@1x.jpg 1x, images/promo/slide3-tablet@2x.jpg 2x">
-              <img class="promo__image" src="images/promo/slide3-mobile@1x.jpg" srcset="images/promo/slide3-mobile@2x.jpg 2x" width="320" height="568" alt="Пейзажи Алтая.">
-            </picture>
-            <div class="promo__content">
-              <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
-              <p class="promo__description">Алтайский трекинг-тур — это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-              <button class="promo__button button" type="button">Смотреть тур</button>
-            </div>
-            <div class="promo__info">
-              <span class="promo__info-item promo__info-item--duration">8 дней/ночей</span>
-              <span class="promo__info-item promo__info-item--difficulty">Лёгкая сложность</span>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <!-- Слайд 3: Алтай -->
+        <li class="promo__item promo__item--slide3">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo/slide3-desktop@1x.webp 1x, images/promo/slide3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo/slide3-tablet@1x.webp 1x, images/promo/slide3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/promo/slide3-mobile@1x.webp 1x, images/promo/slide3-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/promo/slide3-desktop@1x.jpg 1x, images/promo/slide3-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/promo/slide3-tablet@1x.jpg 1x, images/promo/slide3-tablet@2x.jpg 2x">
+            <img class="promo__image" src="images/promo/slide3-mobile@1x.jpg" srcset="images/promo/slide3-mobile@2x.jpg 2x" width="320" height="568" alt="Пейзажи Алтая.">
+          </picture>
+          <div class="promo__content">
+            <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
+            <p class="promo__description">Алтайский трекинг-тур — это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+            <button class="promo__button button" type="button">Смотреть тур</button>
+          </div>
+          <div class="promo__info">
+            <span class="promo__info-item promo__info-item--duration">8 дней/7 ночей</span>
+            <span class="promo__info-item promo__info-item--difficulty">Лёгкая сложность</span>
+          </div>
+        </li>
+      </ul>
       <!-- Пагинация (буллеты) -->
       <div class="promo__pagination">
         <button class="promo__bullet promo__bullet--active" type="button">
