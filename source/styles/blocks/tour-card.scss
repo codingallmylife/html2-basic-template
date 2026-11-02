@@ -1,0 +1,43 @@
+.tour-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Картинка: обрезаем по 45px с каждой стороны на мобилке */
+.tour-card__image {
+  display: block;
+  object-fit: cover;
+  width: calc(100% + 90px);
+  max-width: none;
+  height: auto;
+  margin-left: -45px;
+}
+
+.tour-card__content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template:
+    "badge duration duration" auto
+    "title title title" auto
+    "info info info" 1fr
+    / 1fr 1fr 1fr;
+  padding: 30px 20px;
+  color: $base-white;
+}
+
+.tour-card__badge {
+  grid-area: badge;
+}
+
+.tour-card__duration {
+  grid-area: duration;
+}
+
+.tour-card__title {
+  grid-area: title;
+}
+
+.tour-card__info {
+  grid-area: info;
+}

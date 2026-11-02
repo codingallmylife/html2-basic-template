@@ -3,10 +3,6 @@
   overflow: hidden; /* Чтобы слайды не вылезали */
 }
 
-.promo__container {
-  height: 568px;
-}
-
 .promo__list {
   position: relative;
 }
@@ -100,7 +96,7 @@
   background-color: $transparent;
   border: 1px solid $base-white;
   border-radius: 50%;
-  cursor: pointer;
+  pointer-events: none; /* На мобилке и планшете буллеты не работают */
 }
 
 .promo__bullet--active {
@@ -108,10 +104,6 @@
 }
 
 @media (width >= 768px) {
-  .promo__container {
-    height: 1034px;
-  }
-
   .promo__content {
     top: 342px;
     display: flex;
@@ -170,10 +162,6 @@
 }
 
 @media (width >= 1440px) {
-  .promo__container {
-    height: 800px;
-  }
-
   .promo__content {
     top: 199px;
     display: block;
@@ -209,9 +197,14 @@
     padding-right: $side-padding-desktop;
   }
 
+  .promo__bullet {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
   .promo__info {
     position: absolute;
-    top: 676px;
+    bottom: 80px;
     left: 50%;
     display: flex;
     gap: 10px;

@@ -84,18 +84,20 @@ const handleSwipeEnd = (event) => {
 };
 
 if (slides.length > 0 && bullets.length > 0) {
-  // Вешаем клики на каждый буллет
+  // Вешаем клики на каждый буллет (это работает на всех разрешениях экрана)
   bullets.forEach((bullet, index) => {
     bullet.addEventListener('click', () => {
       showSlide(index);
     });
   });
 
-  // Свайп для mobile и tablet: запоминаем точку касания, при отпускании сравниваем и переключаем слайд, если сдвиг больше минимального значения
-  slides.forEach((item) => {
-    item.addEventListener('touchstart', (event) => { // Слушатель начала свайпа
-      startX = event.touches[0].clientX;
+  // Свайп: запоминаем точку касания, при отпускании сравниваем и переключаем слайд, если сдвиг больше минимального значения
+  if (window.matchMedia('(max-width: 1439px)').matches) { // свайп ограничиваем только для mobile и tablet
+    slides.forEach((item) => {
+      item.addEventListener('touchstart', (event) => { // Слушатель начала свайпа
+        startX = event.touches[0].clientX;
+      });
+      item.addEventListener('touchend', handleSwipeEnd); // Слушатель конца свайпа
     });
-    item.addEventListener('touchend', handleSwipeEnd); // Слушатель конца свайпа
-  });
+  }
 }
