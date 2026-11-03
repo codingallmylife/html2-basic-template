@@ -16,28 +16,124 @@
 .tour-card__content {
   position: absolute;
   inset: 0;
-  display: grid;
-  grid-template:
-    "badge duration duration" auto
-    "title title title" auto
-    "info info info" 1fr
-    / 1fr 1fr 1fr;
-  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px 30px;
+  overflow-wrap: break-word;
   color: $base-white;
 }
 
+.tour-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 7px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 13px;
+}
+
 .tour-card__badge {
-  grid-area: badge;
+  place-self: start;
+  max-width: 94px;
+  padding: 8px 12px 8px 34px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  background-color: $base-primary;
+  background-image: url("../../icons/stack.svg#pin");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 9px 12px;
 }
 
 .tour-card__duration {
-  grid-area: duration;
+  display: flex;
+  column-gap: 14px;
+  max-width: 180px;
+}
+
+.tour-card__duration-item {
+  padding: 8px 0 8px 32px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  background-repeat: no-repeat;
+}
+
+.tour-card__duration-item--day {
+  background-image: url("../../icons/stack.svg#sun");
+  background-position: left center;
+  background-size: 20px 20px;
+}
+
+.tour-card__duration-item--night {
+  background-image: url("../../icons/stack.svg#moon");
+  background-position: 2px center;
+  background-size: 16px 16px;
 }
 
 .tour-card__title {
-  grid-area: title;
+  margin: 0 0 25px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .tour-card__info {
-  grid-area: info;
+  display: grid;
+  grid-template-columns: 84px 83px 1fr;
+  column-gap: 7px;
+}
+
+.tour-card__info-item {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 4px;
+  align-content: start;
+}
+
+.tour-card__info-name {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tour-card__info-value {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tour-card__stars {
+  display: block;
+  width: 84px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position:
+    0 center,
+    17px center,
+    34px center,
+    51px center,
+    68px center;
+  background-size: 16px 16px;
+}
+
+.tour-card__stars--four {
+  background-image:
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#empty-star");
+}
+
+.tour-card__stars--five {
+  background-image:
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star");
 }

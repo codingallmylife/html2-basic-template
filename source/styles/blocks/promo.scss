@@ -64,8 +64,8 @@
 
 .promo__button {
   display: inline-block;
-  width: 180px;
-  padding: 20px 0;
+  max-width: 181px;
+  padding: 20px 34px;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -127,7 +127,7 @@
   }
 
   .promo__description {
-    width: 500px;
+    max-width: 500px;
     margin: 0 0 37px;
     font-size: 17px;
     line-height: 24px;
@@ -177,14 +177,14 @@
   }
 
   .promo__title {
-    width: 945px;
+    max-width: 945px;
     margin: 0 0 24px;
     font-size: 77px;
     line-height: 77px;
   }
 
   .promo__description {
-    width: 465px;
+    max-width: 465px;
     margin: 0 0 37px;
   }
 
