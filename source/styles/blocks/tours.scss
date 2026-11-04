@@ -1,3 +1,145 @@
+.tours {
+  min-height: 595px;
+  padding: 39px 0 30px;
+}
+
+.tours__slide {
+  width: 290px; /* Слайд: ширина карточки на мобилке */
+}
+
+.tours__swiper {
+  margin-bottom: 35px;
+}
+
 .tours__controls {
-  display: none;
+  display: none; /* Слайды на мобилке можно листать только свайпом, так как кнопки скрыты */
+}
+
+.tours__header {
+  margin-bottom: 39px;
+}
+
+.tours__title-container {
+  position: relative;
+}
+
+.tours__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  color: $base-black;
+}
+
+.tours__title-background {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  z-index: 0;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  white-space: nowrap;
+  color: rgba($base-black, 0.03);
+  pointer-events: none;
+}
+
+.tours__show-all {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px; /* компенсация Pixel Perfect */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $base-black;
+}
+
+.tours__show-all::after {
+  display: block;
+  width: 12px;
+  height: 14px;
+  content: "";
+  background-color: $base-black;
+  mask-image: url("../../icons/stack.svg#next");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+@media (width >= 768px) {
+  .tours {
+    min-height: 637px;
+    padding: 60px 0 50px;
+  }
+
+  .tours__slide {
+    width: 330px; /* Слайды: убираем фиксированную ширину (width: auto), Swiper сам распределит */
+  }
+
+  .tours__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .tours__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .tours__title-background {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .tours__controls {
+    display: flex;
+    gap: 4px;
+  }
+
+  .tours__button {
+    position: relative;
+    width: 37px;
+    height: 35px;
+    padding: 0;
+    background-color: $base-primary;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tours__button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 8px;
+    content: "";
+    background-color: $base-white;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    transform: translate(-50%, -50%);
+  }
+
+  .tours__button--previous::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .tours__button:disabled {
+    background-color: $grey;
+    cursor: default;
+  }
+
+  .tours__show-all {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
