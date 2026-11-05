@@ -1,3 +1,5 @@
+/* global Swiper */
+
 // Если JS загрузился, то добавляем к body класс .js
 document.body.classList.add('js');
 
@@ -100,4 +102,23 @@ if (slides.length > 0 && bullets.length > 0) {
       item.addEventListener('touchend', handleSwipeEnd); // Слушатель конца свайпа
     });
   }
+}
+
+// --------------------------------- Скрипт для Swiper в блоке Tours ---------------------------------
+const toursSwiper = document.querySelector('.tours__swiper');
+
+if (toursSwiper) {
+  // eslint-disable-next-line no-new
+  new Swiper(toursSwiper, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.tours__button--next',
+      prevEl: '.tours__button--previous',
+    },
+    breakpoints: {
+      768: {slidesPerView: 2, spaceBetween: 18},
+      1440: {slidesPerView: 3, spaceBetween: 30},
+    },
+  });
 }

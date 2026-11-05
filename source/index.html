@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/swiper-bundle.min.css">
   <link href="styles/styles.css" rel="stylesheet">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -179,8 +179,7 @@
                 </div>
               </article>
             </li>
-            <!--
-            <!- Слайд 2: Алтай ->
+            <!-- Слайд 2: Алтай -->
             <li class="tours__slide swiper-slide">
               <article class="tour-card tour-card--altai">
                 <picture>
@@ -199,7 +198,7 @@
                   <ul class="tour-card__info list-reset">
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Сложность:</span>
-                      <div class="tour-card__stars tour-card__stars--four" role="img" aria-label="4 из 5"></div>
+                      <div class="tour-card__stars tour-card__stars--three" role="img" aria-label="3 из 5"></div>
                     </li>
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Даты набора:</span>
@@ -213,7 +212,7 @@
                 </div>
               </article>
             </li>
-            <!- Слайд 3: Адыгея ->
+            <!-- Слайд 3: Адыгея -->
             <li class="tours__slide swiper-slide">
               <article class="tour-card tour-card--adygea">
                 <picture>
@@ -246,7 +245,7 @@
                 </div>
               </article>
             </li>
-            <!- Слайд 4: Урал ->
+            <!-- Слайд 4: Урал -->
             <li class="tours__slide swiper-slide">
               <article class="tour-card tour-card--ural">
                 <picture>
@@ -280,13 +279,30 @@
               </article>
             </li>
           </ul>
-          -->
         </div>
         <a class="tours__show-all" href="#">Показать все туры</a>
       </div>
     </section>
 
-    <section class="about"></section>
+    <section class="about">
+      <div class="container">
+        <div class="about__title-container">
+          <h2 class="about__title">О нас</h2>
+          <span class="about__title-background" aria-hidden="true">О нас</span>
+        </div>
+      </div>
+      <ul class="list-reset">
+        <li>
+          <h3>История компании</h3>
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+        </li>
+        <li>
+          <h3>Наша цель</h3>
+          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+        </li>
+      </ul>
+    </section>
+
     <section class="training"></section>
     <section class="questions"></section>
     <section class="contacts"></section>
@@ -295,6 +311,8 @@
   <footer class="footer">
     <!-- Здесь будет подвал -->
   </footer>
+  <script src="vendor/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

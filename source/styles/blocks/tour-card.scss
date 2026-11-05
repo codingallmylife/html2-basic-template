@@ -48,7 +48,7 @@
 }
 
 .tour-card__top:first-child {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .tour-card__badge {
@@ -146,6 +146,15 @@
     51px center,
     68px center;
   background-size: 16px 16px;
+}
+
+.tour-card__stars--three {
+  background-image:
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#star"),
+    url("../../icons/stack.svg#empty-star"),
+    url("../../icons/stack.svg#empty-star");
 }
 
 .tour-card__stars--four {

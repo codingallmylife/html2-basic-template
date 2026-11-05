@@ -81,7 +81,7 @@
   }
 
   .tours__slide {
-    width: 330px; /* Слайды: убираем фиксированную ширину (width: auto), Swiper сам распределит */
+    width: auto; /* Слайды: убираем фиксированную ширину, Swiper сам распределит */
   }
 
   .tours__header {
@@ -152,10 +152,6 @@
   .tours {
     min-height: 813px;
     padding: 123px 0 110px;
-  }
-
-  .tours__slide {
-    width: 380px; /* Слайды: убираем фиксированную ширину (width: auto), Swiper сам распределит */
   }
 
   .tours__swiper {
