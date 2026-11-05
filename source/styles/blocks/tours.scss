@@ -1,6 +1,6 @@
 .tours {
   min-height: 595px;
-  padding: 39px 0 30px;
+  padding: 38px 0 30px;
 }
 
 .tours__slide {
@@ -16,7 +16,7 @@
 }
 
 .tours__header {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .tours__title-container {
@@ -48,10 +48,10 @@
 
 .tours__show-all {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
   justify-content: center;
-  padding-left: 2px; /* компенсация Pixel Perfect */
+  padding-left: 2px;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -63,8 +63,9 @@
 
 .tours__show-all::after {
   display: block;
-  width: 12px;
-  height: 14px;
+  flex-shrink: 0;
+  width: 9px; /* размер из viewBox */
+  height: 14px; /* размер из viewBox */
   content: "";
   background-color: $base-black;
   mask-image: url("../../icons/stack.svg#next");
@@ -76,7 +77,7 @@
 @media (width >= 768px) {
   .tours {
     min-height: 637px;
-    padding: 60px 0 50px;
+    padding: 59px 0 50px;
   }
 
   .tours__slide {
@@ -102,6 +103,7 @@
   .tours__controls {
     display: flex;
     gap: 4px;
+    margin-top: 1px;
   }
 
   .tours__button {
@@ -139,7 +141,42 @@
   }
 
   .tours__show-all {
+    gap: 13px;
+    padding-left: 3px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (width >= 1440px) {
+  .tours {
+    min-height: 813px;
+    padding: 123px 0 110px;
+  }
+
+  .tours__slide {
+    width: 380px; /* Слайды: убираем фиксированную ширину (width: auto), Swiper сам распределит */
+  }
+
+  .tours__swiper {
+    margin-bottom: 63px;
+  }
+
+  .tours__header {
+    margin-bottom: 50px;
+  }
+
+  .tours__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .tours__title-background {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .tours__controls {
+    margin-top: -3px;
   }
 }

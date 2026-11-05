@@ -16,7 +16,7 @@
 
 .tour-card__content {
   position: absolute;
-  inset: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -25,17 +25,30 @@
   color: $base-white;
 }
 
+.tour-card--caucasus .tour-card__content {
+  top: 224px;
+}
+
+.tour-card--altai .tour-card__content,
+.tour-card--ural .tour-card__content {
+  top: 192px;
+}
+
+.tour-card--adygea .tour-card__content {
+  top: 164px;
+}
+
 .tour-card__top {
   display: flex;
   flex-wrap: wrap;
   row-gap: 8px;
   align-items: center;
   justify-content: space-between;
-  margin: auto 0 12px;
+  margin: 0 0 12px;
 }
 
 .tour-card__top:first-child {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .tour-card__badge {
@@ -154,11 +167,37 @@
 }
 
 @media (width >= 768px) {
-  .tour-card__top {
-    margin: auto 0 15px;
+  .tour-card__top,
+  .tour-card__top:first-child {
+    margin: 0 0 16px;
   }
 
   .tour-card__title {
     max-width: 235px;
+  }
+
+  .tour-card--caucasus .tour-card__content,
+  .tour-card--altai .tour-card__content,
+  .tour-card--ural .tour-card__content {
+    top: 224px;
+  }
+
+  .tour-card--adygea .tour-card__content {
+    top: 196px;
+  }
+}
+
+@media (width >= 768px) {
+  .tour-card__top,
+  .tour-card__top:first-child {
+    margin: 0 0 15px;
+  }
+
+  .tour-card__badge {
+    padding: 7px 12px 9px 34px;
+  }
+
+  .tour-card__stars {
+    margin-top: 5px;
   }
 }
