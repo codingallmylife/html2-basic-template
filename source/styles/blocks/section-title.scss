@@ -1,0 +1,46 @@
+.section-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  color: $base-black;
+}
+
+.section-title__background {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  z-index: 0;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  white-space: nowrap;
+  color: rgba($base-black, 0.03);
+  pointer-events: none;
+}
+
+@media (width >= 768px) {
+  .section-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .section-title__background {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (width >= 1440px) {
+  .section-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .section-title__background {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

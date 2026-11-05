@@ -1,0 +1,44 @@
+.about {
+  min-height: 947px;
+  padding: 36px 0 20px;
+  overflow: hidden; /* Чтобы 100vw не создавал горизонтальный скролл */
+}
+
+.about__title-container {
+  margin-bottom: 42px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.about__subtitle {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $base-black;
+}
+
+.about__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-black;
+}
+
+.about picture {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+}
+
+.about__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
