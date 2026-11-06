@@ -1,6 +1,27 @@
 .tours {
+  position: relative;
   min-height: 595px;
   padding: 38px 0 30px;
+}
+
+.tours::before {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: -1;
+  width: 141px;
+  height: 595px;
+  content: "";
+  background-image: url("../../images/tours/clouds-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (resolution >= 2dppx) {
+  .tours::before {
+    background-image: url("../../images/tours/clouds-mobile@2x.png");
+  }
 }
 
 .tours__slide {
@@ -37,8 +58,8 @@
 .tours__show-all::after {
   display: block;
   flex-shrink: 0;
-  width: 9px; /* размер из viewBox */
-  height: 14px; /* размер из viewBox */
+  width: 9px; /* размер из viewBox, не из макета - размер из макета не совпадает */
+  height: 14px; /* размер из viewBox, не из макета - размер из макета не совпадает */
   content: "";
   background-color: $base-black;
   mask-image: url("../../icons/stack.svg#next");
@@ -51,6 +72,19 @@
   .tours {
     min-height: 637px;
     padding: 59px 0 50px;
+  }
+
+  .tours::before {
+    top: -92px;
+    width: 465px;
+    height: 1630px;
+    background-image: url("../../images/tours/clouds-tablet@1x.png");
+  }
+
+  @media (resolution >= 2dppx) {
+    .tours::before {
+      background-image: url("../../images/tours/clouds-tablet@2x.png");
+    }
   }
 
   .tours__slide {
@@ -115,6 +149,18 @@
   .tours {
     min-height: 813px;
     padding: 123px 0 110px;
+  }
+
+  .tours::before {
+    top: -126px;
+    width: 602px;
+    background-image: url("../../images/tours/clouds-desktop@1x.png");
+  }
+
+  @media (resolution >= 2dppx) {
+    .tours::before {
+      background-image: url("../../images/tours/clouds-desktop@2x.png");
+    }
   }
 
   .tours__swiper {
