@@ -1,7 +1,14 @@
 .about {
   min-height: 947px;
   padding: 36px 0 20px;
-  overflow: hidden; /* Чтобы 100vw не создавал горизонтальный скролл */
+}
+
+.about .container {
+  padding: 0;
+}
+
+.about__content {
+  padding: 0 $side-padding-mobile;
 }
 
 .about__title-container {
@@ -12,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  margin-bottom: 1px;
 }
 
 .about__subtitle {
@@ -32,13 +40,93 @@
 
 .about picture {
   display: block;
-  width: 100vw;
-  max-width: none;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
 }
 
 .about__image {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media (width >= 768px) {
+  .about {
+    min-height: 928px;
+    padding: 60px 0 40px;
+  }
+
+  .about__content {
+    padding: 0 260px 0 70px;
+  }
+
+  .about__title-container {
+    margin-bottom: 48px;
+  }
+
+  .about__list {
+    gap: 30px;
+    margin-bottom: 3px;
+  }
+
+  .about__subtitle {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about picture {
+    width: 585px;
+    margin-right: auto;
+  }
+}
+
+@media (width >= 1440px) {
+  .about {
+    min-height: 698px;
+    padding: 100px 0;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+
+  .about__content {
+    flex-shrink: 0;
+    width: 585px;
+    margin: 0;
+    padding: 45px 0 0;
+  }
+
+  .about__title-container {
+    margin-bottom: 59px;
+  }
+
+  .about__list {
+    gap: 29px;
+    margin-bottom: 0;
+  }
+
+  .about__subtitle {
+    margin: 0 0 16px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about picture {
+    flex-shrink: 0;
+    width: 660px;
+    margin: 0;
+  }
 }

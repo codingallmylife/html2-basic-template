@@ -2,7 +2,7 @@
   position: relative;
   display: block; /* Чтобы картинка могла растянуться */
   overflow: hidden;
-  background-color: $base-lighter; /* Подстраховочный фон - чтобы не было белого шрифта на белом фоне */
+  background-color: $base-lighter; /* Подстраховочный фон - чтобы не было белого шрифта на белом фоне, если картинка не загрузится */
 }
 
 .tour-card__image {

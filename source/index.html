@@ -133,7 +133,7 @@
         <header class="tours__header">
           <div class="section-title-container"> <!-- Заголовок с декоративным полупрозрачным дублем -->
             <h2 class="section-title">Ближайшие туры</h2>
-            <span class="section-title__background" aria-hidden="true">Ближайшие туры</span>
+            <span class="section-title__background section-title__background--tours" aria-hidden="true">Ближайшие туры</span>
           </div>
           <div class="tours__controls">
             <button class="tours__button tours__button--previous" type="button" disabled>
@@ -286,20 +286,22 @@
 
     <section class="about">
       <div class="container">
-        <div class="section-title-container about__title-container">
-          <h2 class="section-title">О нас</h2>
-          <span class="section-title__background" aria-hidden="true">О нас</span>
+        <div class="about__content">
+          <div class="section-title-container about__title-container">
+            <h2 class="section-title">О нас</h2>
+            <span class="section-title__background section-title__background--about" aria-hidden="true">О нас</span>
+          </div>
+          <ul class="about__list list-reset">
+            <li class="about__list-item">
+              <h3 class="about__subtitle">История компании</h3>
+              <p class="about__text">В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+            </li>
+            <li class="about__list-item">
+              <h3 class="about__subtitle">Наша цель</h3>
+              <p class="about__text">Подарить вам незабываемые впечатления от&nbsp;похода в горы. Мы&nbsp;берём на себя все&nbsp;организационные вопросы. При&nbsp;организации мы обязательно учтём все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+            </li>
+          </ul>
         </div>
-        <ul class="about__list list-reset">
-          <li class="about__list-item">
-            <h3 class="about__subtitle">История компании</h3>
-            <p class="about__text">В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
-          </li>
-          <li class="about__list-item">
-            <h3 class="about__subtitle">Наша цель</h3>
-            <p class="about__text">Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём на себя все&nbsp;организационные вопросы. При&nbsp;организации мы обязательно учтём все ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
-          </li>
-        </ul>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/about/about-tourists-desktop@1x.webp 1x, images/about/about-tourists-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="images/about/about-tourists-tablet@1x.webp 1x, images/about/about-tourists-tablet@2x.webp 2x">

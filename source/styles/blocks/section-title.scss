@@ -10,7 +10,6 @@
 
 .section-title__background {
   position: absolute;
-  top: -16px;
   left: 0;
   z-index: 0;
   font-size: 26px;
@@ -19,6 +18,14 @@
   white-space: nowrap;
   color: rgba($base-black, 0.03);
   pointer-events: none;
+}
+
+.section-title__background--tours {
+  top: -16px;
+}
+
+.section-title__background--about {
+  top: -13px;
 }
 
 @media (width >= 768px) {
@@ -31,6 +38,10 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+  .section-title__background--about {
+    top: -15px;
+  }
 }
 
 @media (width >= 1440px) {
@@ -42,5 +53,9 @@
   .section-title__background {
     font-size: 55px;
     line-height: 55px;
+  }
+
+  .section-title__background--about {
+    top: -39px;
   }
 }
