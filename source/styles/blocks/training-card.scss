@@ -1,0 +1,65 @@
+.training-card {
+  min-height: 356px;
+  padding: 14px;
+  border: 1px solid rgba($base-primary, 0.1);
+}
+
+.training-card__image {
+  object-fit: cover;
+  margin-bottom: 11px;
+}
+
+.training-card__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.training-card__title {
+  max-width: 130px;
+  margin: 1px 0 13px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.training-card__social {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: rgba($base-white, 0.3); /* В Figma у рамки и фона вместе: "opacity: 0.3;" */
+  border: 1px solid rgba($base-black, 0.3); /* В Figma у рамки и фона вместе: "opacity: 0.3;" */
+}
+
+.training-card__social::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 8px;
+  content: "";
+  background-color: $base-black;
+  mask-image: url("../../icons/stack.svg#vk"); /* В Figma: "opacity: 100%" */
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  transform: translate(-50%, -50%);
+}
+
+.training-card__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (width >= 768px) {
+  .training-card {
+    min-height: 388px;
+  }
+}
+
+@media (width >= 768px) {
+  .training-card {
+    min-height: 356px;
+  }
+}

@@ -111,14 +111,40 @@ if (toursSwiper) {
   // eslint-disable-next-line no-new
   new Swiper(toursSwiper, {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 18,
     navigation: {
-      nextEl: '.tours__button--next',
-      prevEl: '.tours__button--previous',
+      // Ищем кнопки по их родителю training__controls
+      nextEl: document.querySelector('.tours__controls .slider-controls__button--next'),
+      prevEl: document.querySelector('.tours__controls .slider-controls__button--previous'),
     },
     breakpoints: {
       768: {slidesPerView: 2, spaceBetween: 18},
       1440: {slidesPerView: 3, spaceBetween: 30},
+    },
+  });
+}
+
+// --------------------------------- Скрипт для Swiper в блоке Training ---------------------------------
+const trainingSwiper = document.querySelector('.training__swiper');
+if (trainingSwiper) {
+  // eslint-disable-next-line no-new
+  new Swiper(trainingSwiper, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      // Ищем кнопки по их родителю training__controls
+      nextEl: document.querySelector('.training__controls .slider-controls__button--next'),
+      prevEl: document.querySelector('.training__controls .slider-controls__button--previous'),
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
     },
   });
 }

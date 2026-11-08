@@ -135,11 +135,11 @@
             <h2 class="section-title">Ближайшие туры</h2>
             <span class="section-title__background section-title__background--tours" aria-hidden="true">Ближайшие туры</span>
           </div>
-          <div class="tours__controls">
-            <button class="tours__button tours__button--previous" type="button" disabled>
+          <div class="slider-controls tours__controls">
+            <button class="slider-controls__button slider-controls__button--previous" type="button" disabled>
               <span class="visually-hidden">Предыдущий тур</span>
             </button>
-            <button class="tours__button tours__button--next" type="button">
+            <button class="slider-controls__button slider-controls__button--next" type="button">
               <span class="visually-hidden">Следующий тур</span>
             </button>
           </div>
@@ -313,7 +313,113 @@
       </div>
     </section>
 
-    <section class="training"></section>
+    <section class="training" id="training">
+      <div class="container">
+        <header class="training__header">
+          <div class="section-title-container"> <!-- Заголовок с декоративным полупрозрачным дублем -->
+            <h2 class="section-title training__title">Обучение</h2>
+            <span class="section-title__background section-title__background--training" aria-hidden="true">Обучение</span>
+          </div>
+          <p class="training__description">Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        </header>
+        <div class="training__instructors-top">
+          <h3 class="training__subtitle">Наши инструкторы</h3>
+          <div class="slider-controls training__controls">
+            <button class="slider-controls__button slider-controls__button--previous" type="button" disabled>
+              <span class="visually-hidden">Предыдущий инструктор</span>
+            </button>
+            <button class="slider-controls__button slider-controls__button--next" type="button">
+              <span class="visually-hidden">Следующий инструктор</span>
+            </button>
+          </div>
+        </div>
+        <div class="training__swiper swiper"> <!-- Контейнер Swiper -->
+          <ul class="swiper-wrapper list-reset"> <!-- Обертка (лента) со слайдами -->
+            <!-- Слайд 1: Александр Прокофьев -->
+            <li class="training__slide swiper-slide">
+              <article class="training-card">
+                <picture>
+                  <source type="image/webp" srcset="images/training/slide1@1x.webp 1x, images/training/slide1@2x.webp 2x">
+                  <img class="training-card__image" src="images/training/slide1@1x.jpg" srcset="images/training/slide1@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев.">
+                </picture>
+                <div class="training-card__top">
+                  <h4 class="training-card__title">Александр Прокофьев</h4>
+                  <a class="training-card__social" href="#">
+                    <span class="visually-hidden">Профиль Александра Прокофьева в ВКонтакте.</span>
+                  </a>
+                </div>
+                <p class="training-card__description">Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
+              </article>
+            </li>
+            <!-- Слайд 2: Светлана Афиногенова -->
+            <li class="training__slide swiper-slide">
+              <article class="training-card">
+                <picture>
+                  <source type="image/webp" srcset="images/training/slide2@1x.webp 1x, images/training/slide2@2x.webp 2x">
+                  <img class="training-card__image" src="images/training/slide2@1x.jpg" srcset="images/training/slide2@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова.">
+                </picture>
+                <div class="training-card__top">
+                  <h4 class="training-card__title">Светлана Афиногенова</h4>
+                  <a class="training-card__social" href="#">
+                    <span class="visually-hidden">Профиль Светланы Афиногеновой в ВКонтакте.</span>
+                  </a>
+                </div>
+                <p class="training-card__description">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              </article>
+            </li>
+            <!-- Слайд 3: Надежда Колесниченко -->
+            <li class="training__slide swiper-slide">
+              <article class="training-card">
+                <picture>
+                  <source type="image/webp" srcset="images/training/slide3@1x.webp 1x, images/training/slide3@2x.webp 2x">
+                  <img class="training-card__image" src="images/training/slide3@1x.jpg" srcset="images/training/slide3@2x.jpg 2x" width="260" height="200" alt="Надежда Колесниченко.">
+                </picture>
+                <div class="training-card__top">
+                  <h4 class="training-card__title">Надежда Колесниченко</h4>
+                  <a class="training-card__social" href="#">
+                    <span class="visually-hidden">Профиль Надежды Колесниченко в ВКонтакте.</span>
+                  </a>
+                </div>
+                <p class="training-card__description">Участники говорят, что&nbsp;Надежда ответственная, приятная в общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно&nbsp;и уверенно.</p>
+              </article>
+            </li>
+            <!-- Слайд 4: Федор Кайгородов -->
+            <li class="training__slide swiper-slide">
+              <article class="training-card">
+                <picture>
+                  <source type="image/webp" srcset="images/training/slide4@1x.webp 1x, images/training/slide4@2x.webp 2x">
+                  <img class="training-card__image" src="images/training/slide4@1x.jpg" srcset="images/training/slide4@2x.jpg 2x" width="260" height="200" alt="Федор Кайгородов.">
+                </picture>
+                <div class="training-card__top">
+                  <h4 class="training-card__title">Федор Кайгородов</h4>
+                  <a class="training-card__social" href="#">
+                    <span class="visually-hidden">Профиль Федора Кайгородова в ВКонтакте.</span>
+                  </a>
+                </div>
+                <p class="training-card__description">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+              </article>
+            </li>
+            <!-- Слайд 5: Даниэль Васнецов -->
+            <li class="training__slide swiper-slide">
+              <article class="training-card">
+                <picture>
+                  <source type="image/webp" srcset="images/training/slide5@1x.webp 1x, images/training/slide5@2x.webp 2x">
+                  <img class="training-card__image" src="images/training/slide5@1x.jpg" srcset="images/training/slide5@2x.jpg 2x" width="260" height="200" alt="Даниэль Васнецов.">
+                </picture>
+                <div class="training-card__top">
+                  <h4 class="training-card__title">Даниэль Васнецов</h4>
+                  <a class="training-card__social" href="#">
+                    <span class="visually-hidden">Профиль Даниэля Васнецова в ВКонтакте.</span>
+                  </a>
+                </div>
+                <p class="training-card__description">Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="questions"></section>
     <section class="contacts"></section>
   </main>

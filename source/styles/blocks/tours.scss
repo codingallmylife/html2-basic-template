@@ -32,10 +32,6 @@
   margin-bottom: 35px;
 }
 
-.tours__controls {
-  display: none; /* Слайды на мобилке можно листать только свайпом, так как кнопки скрыты */
-}
-
 .tours__header {
   margin-bottom: 40px;
 }
@@ -66,6 +62,12 @@
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: contain;
+}
+
+.tours__controls {
+  @media (width < 768px) {
+    display: none; /* Слайды на мобилке можно листать только свайпом, так как кнопки скрыты */
+  }
 }
 
 @media (width >= 768px) {
@@ -101,40 +103,6 @@
     display: flex;
     gap: 4px;
     margin-top: 1px;
-  }
-
-  .tours__button {
-    position: relative;
-    width: 37px;
-    height: 35px;
-    padding: 0;
-    background-color: $base-primary;
-    border: none;
-    cursor: pointer;
-  }
-
-  .tours__button::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 14px;
-    height: 8px;
-    content: "";
-    background-color: $base-white;
-    mask-image: url("../../icons/stack.svg#arrow-right");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    transform: translate(-50%, -50%);
-  }
-
-  .tours__button--previous::before {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-
-  .tours__button:disabled {
-    background-color: $grey;
-    cursor: default;
   }
 
   .tours__show-all {

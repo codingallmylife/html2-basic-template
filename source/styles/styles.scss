@@ -7,12 +7,16 @@
 @import "./common/container.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
+@import "./blocks/slider-controls.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/section-title-container.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/tours.scss";
 @import "./blocks/tour-card.scss";
 @import "./blocks/about.scss";
-@import "./blocks/button.scss";
-@import "./blocks/section-title.scss";
-@import "./blocks/section-title-container.scss";
+@import "./blocks/training.scss";
+@import "./blocks/training-card.scss";
+
