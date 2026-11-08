@@ -104,13 +104,13 @@
 @media (width >= 1440px) {
   .training {
     min-height: 687px;
-    padding: 40px 0;
+    padding: 63px 0 40px;
   }
 
   .training::before {
-    top: 200px;
-    width: 768px;
-    height: 996px;
+    top: -85px;
+    width: 633px;
+    height: 280px;
     background-image: url("../../images/training/clouds-desktop@1x.png");
   }
 
