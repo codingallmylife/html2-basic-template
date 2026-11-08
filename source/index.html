@@ -33,10 +33,10 @@
               <a class="header__link" href="#about">О нас</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#reviews">Отзывы</a>
+              <a class="header__link" href="#">Отзывы</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#gallery">Фотографии</a>
+              <a class="header__link" href="#">Фотографии</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="#contacts">Контакты</a>
@@ -420,7 +420,24 @@
       </div>
     </section>
 
-    <section class="questions"></section>
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title">Остались вопросы?</h2>
+        <p class="questions__description">Заполните форму и наш оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
+        <form class="questions__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="questions__field">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="questions__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[\d+\(\)\s\-]+" required>
+          </div>
+          <div class="questions__field">
+            <label class="visually-hidden" for="email">Email</label>
+            <input class="questions__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Zа-яА-Я]{2,}" required>
+          </div>
+          <button class="questions__submit button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
     <section class="contacts"></section>
   </main>
 

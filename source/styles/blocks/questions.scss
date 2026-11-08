@@ -1,0 +1,181 @@
+.questions {
+  min-height: 638px;
+  padding: 176px 0 0;
+  background-color: $base-lighter;
+  background-image: url("../../images/questions/background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (resolution >= 2dppx) {
+  .questions {
+    background-image: url("../../images/questions/background-mobile@2x.jpg");
+  }
+}
+
+.questions__title {
+  margin: 0 0 17px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  color: $base-white;
+}
+
+.questions__description {
+  max-width: 220px;
+  margin: 0 auto 21px;
+  padding-left: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-indent: -1px;
+  color: $base-white;
+}
+
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 258px;
+  margin: 0 auto;
+}
+
+.questions__submit {
+  display: inline-block;
+  padding: 21px 19px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $base-white;
+  background-color: $base-primary;
+  border: none;
+}
+
+.questions__input {
+  width: 100%;
+  padding: 15px 13px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $base-black;
+  background-color: $base-white;
+  border: 1px solid $transparent; /* В макете на мобилке рамки нет, прозрачная рамка - резерв под состояния из стайлгайда */
+  border-radius: 2px;
+}
+
+.questions__input::placeholder {
+  color: rgba($base-black, 0.5);
+  opacity: 100%; /* Отключает дефолтную прозрачность в Firefox */
+}
+
+.questions__input:not(:disabled, :user-invalid):hover {
+  border: 1px solid $additional-blue;
+}
+
+.questions__input:not(:disabled, :user-invalid):focus {
+  border: 1px solid $base-black;
+  outline: none;
+}
+
+.questions__input:user-invalid {
+  border: 1px solid $base-red;
+  outline: none;
+}
+
+.questions__input:disabled {
+  color: rgba($base-grey, 0.5);
+  border: 1px solid $base-grey;
+  opacity: 100%;
+  cursor: default;
+}
+
+@media (width >= 768px) {
+  .questions {
+    min-height: 680px;
+    padding: 186px 0 0;
+    background-image: url("../../images/questions/background-tablet@1x.jpg");
+  }
+
+  @media (resolution >= 2dppx) {
+    .questions {
+      background-image: url("../../images/questions/background-tablet@2x.jpg");
+    }
+  }
+
+  .questions__title {
+    margin: 0 0 23px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .questions__description {
+    max-width: 360px;
+    margin: 0 auto 25px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: -4px;
+  }
+
+  .questions__form {
+    gap: 12px;
+    width: 360px;
+  }
+
+  .questions__submit {
+    padding: 20px 19px;
+  }
+
+  .questions__input {
+    padding: 18px 29px 16px;
+    border-color: rgba($base-black, 0.1);
+  }
+}
+
+@media (width >= 1440px) {
+  .questions {
+    min-height: 760px;
+    padding: 296px 0 0;
+    background-image: url("../../images/questions/background-desktop@1x.jpg");
+  }
+
+  @media (resolution >= 2dppx) {
+    .questions {
+      background-image: url("../../images/questions/background-desktop@2x.jpg");
+    }
+  }
+
+  .questions__title {
+    margin: 0 0 17px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .questions__description {
+    max-width: 100%;
+    margin: 0 auto 40px;
+    text-indent: 0;
+  }
+
+  .questions__form {
+    flex-direction: row;
+    gap: 30px;
+    width: 960px;
+  }
+
+  .questions__submit {
+    width: 180px;
+    padding: 20px 19px;
+  }
+
+  .questions__input {
+    width: 360px;
+    padding: 18px 29px 16px;
+    border-color: rgba($base-black, 0.1);
+  }
+}
