@@ -18,7 +18,7 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="images/logotype.svg" width="142" height="42" alt="LIFETOUR.">
+        <img class="header__logo-image" src="images/logotype-light.svg" width="142" height="42" alt="LIFETOUR.">
       </a>
       <nav class="header__navigation" id="menu">
         <div class="container">
@@ -438,7 +438,39 @@
       </div>
     </section>
 
-    <section class="contacts"></section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__content">
+          <div class="section-title-container contacts__title-container">
+            <h2 class="section-title">Контакты</h2>
+            <span class="section-title__background section-title__background--contacts" aria-hidden="true">Контакты</span>
+          </div>
+          <p class="contacts__description">Свяжитесь с нами любым удобным для&nbsp;вас способом или приходите к&nbsp;нам&nbsp;в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          <ul class="contacts__list list-reset">
+            <li class="contacts__item contacts__item--phone">
+              <span class="contacts__name">Телефон</span>
+              <a class="contacts__link" href="tel:+79837454545">+7&nbsp;983&nbsp;745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <span class="contacts__name">Email</span>
+              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <span class="contacts__name">Адрес</span>
+              <address class="contacts__address">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</address>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/contacts/map-desktop@1x.webp 1x, images/contacts/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/contacts/map-tablet@1x.webp 1x, images/contacts/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="images/contacts/map-mobile@1x.webp 1x, images/contacts/map-mobile@2x.webp 2x">
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/contacts/map-desktop@1x.jpg 1x, images/contacts/map-desktop@2x.jpg 2x">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/contacts/map-tablet@1x.jpg 1x, images/contacts/map-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="images/contacts/map-mobile@1x.jpg" srcset="images/contacts/map-mobile@2x.jpg 2x" width="320" height="343" alt="Карта проезда к офису Lifetour по адресу: г. Москва, пр-т Мира, д. 14, офис 101.">
+        </picture>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

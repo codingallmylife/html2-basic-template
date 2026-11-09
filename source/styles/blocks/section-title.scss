@@ -25,7 +25,8 @@
   top: -16px;
 }
 
-.section-title__background--about {
+.section-title__background--about,
+.section-title__background--contacts {
   top: -13px;
 }
 
@@ -40,7 +41,8 @@
     line-height: 40px;
   }
 
-  .section-title__background--about {
+  .section-title__background--about,
+  .section-title__background--contacts {
     top: -15px;
   }
 }
@@ -58,5 +60,9 @@
 
   .section-title__background--about {
     top: -39px;
+  }
+
+  .section-title__background--contacts {
+    top: -17px;
   }
 }
