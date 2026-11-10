@@ -65,16 +65,8 @@
 }
 
 .promo__button {
-  display: inline-block;
   max-width: 181px;
-  padding: 20px 34px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  color: $base-white;
-  background-color: $base-primary;
-  border: none;
+  padding: 19px 33px;
 }
 
 .promo__info {
@@ -103,6 +95,38 @@
 
 .promo__bullet--active {
   background-color: $base-white;
+}
+
+.promo__bullet:hover:not(.promo__bullet--active) {
+  background-color: $grey-lighter;
+}
+
+.promo__bullet:focus {
+  position: relative;
+  border: 1px solid $base-white;
+  outline: none;
+}
+
+.promo__bullet:focus::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border: 1px solid rgba($base-white, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promo__bullet:active:not(.promo__bullet--active) {
+  background-color: rgba($base-white, 0.5);
+}
+
+.promo__bullet:hover::before,
+.promo__bullet:active::before {
+  display: none;
 }
 
 @media (width >= 768px) {
@@ -142,6 +166,11 @@
   .promo__bullet {
     width: 20px;
     height: 20px;
+  }
+
+  .promo__bullet:focus::before {
+    width: 24px;
+    height: 24px;
   }
 
   .promo__item--slide2::after {

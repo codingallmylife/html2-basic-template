@@ -44,14 +44,7 @@
 }
 
 .questions__submit {
-  display: inline-block;
   padding: 21px 19px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  color: $base-white;
-  background-color: $base-primary;
   border: none;
 }
 
@@ -74,7 +67,7 @@
 }
 
 .questions__input:not(:disabled, :user-invalid):hover {
-  border: 1px solid $additional-blue;
+  border: 1px solid $base-primary;
 }
 
 .questions__input:not(:disabled, :user-invalid):focus {

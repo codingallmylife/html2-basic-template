@@ -4,7 +4,7 @@
   height: 35px;
   padding: 0;
   background-color: $base-primary;
-  border: none;
+  border: 1px solid $base-primary;
   cursor: pointer;
 }
 
@@ -27,7 +27,36 @@
   transform: translate(-50%, -50%) rotate(180deg);
 }
 
+.slider-controls__button:hover:not(:disabled) {
+  background-color: $base-white;
+  border-color: $base-darker;
+}
+
+.slider-controls__button:hover:not(:disabled)::before,
+.slider-controls__button:focus:not(:disabled)::before {
+  background-color: $base-darker;
+}
+
+.slider-controls__button:focus:not(:disabled) {
+  background-color: $base-white;
+  border-color: $base-white;
+}
+
+.slider-controls__button:active:not(:disabled) {
+  background-color: $base-darker;
+  border-color: $base-darker;
+}
+
+.slider-controls__button:active:not(:disabled)::before {
+  background-color: $base-white;
+}
+
 .slider-controls__button:disabled {
   background-color: $base-grey;
+  border-color: $base-grey;
   cursor: default;
+}
+
+.slider-controls__button:disabled::before {
+  background-color: $base-white;
 }

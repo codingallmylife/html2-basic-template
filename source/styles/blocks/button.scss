@@ -1,4 +1,38 @@
 .button {
+  display: inline-block;
   font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $base-white;
+  background-color: $base-primary;
+  border: 1px solid $base-primary;
   cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  color: $base-darker;
+  background-color: $base-white;
+  border-color: $base-darker;
+}
+
+.button:focus:not(:disabled) {
+  color: $base-darker;
+  background-color: $base-white;
+  border-color: $base-white;
+  outline: none;
+}
+
+.button:active:not(:disabled) {
+  color: $base-white;
+  background-color: $base-darker;
+  border-color: $base-darker;
+}
+
+.button:disabled {
+  color: $base-white;
+  background-color: $base-grey;
+  border-color: $base-grey;
+  cursor: default;
 }

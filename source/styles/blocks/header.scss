@@ -51,6 +51,20 @@
   margin-bottom: 16px;
 }
 
+.header__logo:hover {
+  opacity: 80%;
+}
+
+.header__logo:focus {
+  outline: 2px solid $base-white;
+  outline-offset: 2px;
+  opacity: 80%;
+}
+
+.header__logo:active {
+  opacity: 40%;
+}
+
 .header__logo-image {
   display: block;
   width: 142px;
@@ -68,6 +82,26 @@
   text-decoration-line: none;
   white-space: nowrap;
   color: $base-white;
+}
+
+.header__phone:hover {
+  color: rgba($base-white, 0.5);
+}
+
+.header__phone:focus {
+  color: $base-black;
+  outline: none;
+}
+
+.header__phone:active {
+  color: $base-darker;
+}
+
+/* Disabled (в текущем макете телефон активен, класс не применяется) */
+.header__phone--disabled {
+  color: $base-grey;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* Базовое скрытие меню на мобилке */
@@ -95,8 +129,8 @@
 .header__list {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  padding: 15px 0 50px;
+  gap: 17px;
+  padding: 12px 0 48px;
 }
 
 .header__item {
@@ -104,7 +138,8 @@
 }
 
 .header__link {
-  display: block;
+  position: relative;
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -112,6 +147,59 @@
   text-decoration-line: none;
   text-transform: uppercase;
   color: $base-white;
+}
+
+.header__link::before {
+  position: absolute;
+  right: -5px;
+  bottom: -3px;
+  left: -5px;
+  height: 1px;
+  content: "";
+  background-color: $base-white;
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.header__link::after {
+  position: absolute;
+  inset: -3px -5px;
+  content: "";
+  border: 1px solid $base-white;
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.header__link:hover::before {
+  opacity: 100%;
+}
+
+.header__link:focus {
+  outline: none;
+}
+
+.header__link:focus::after {
+  opacity: 100%;
+}
+
+.header__link:focus::before {
+  opacity: 0%;
+}
+
+.header__link:active {
+  color: $base-darker;
+}
+
+.header__link:active::before,
+.header__link:active::after {
+  opacity: 0%;
+}
+
+/* Disabled (в макете ссылки вв меню хедера активны, класс не применяется) */
+.header__link--disabled {
+  color: $base-grey;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* Крестик: когда меню открыто (класс на header) */
@@ -168,13 +256,14 @@
 
   /* Меняем параметры шрифта, как указано в макете, когда меню открыто */
   .header__toggle--open ~ .header__phone {
+    margin-top: 3px;
     font-size: 18px;
     line-height: 18px;
   }
 
   .header__list {
-    gap: 26px;
-    padding: 30px 0 70px;
+    gap: 23px;
+    padding: 29px 0 68px;
   }
 
   .header__link {

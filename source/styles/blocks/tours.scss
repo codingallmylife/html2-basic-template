@@ -64,6 +64,42 @@
   mask-size: contain;
 }
 
+.tours__show-all:hover {
+  color: rgba($base-primary, 0.1);
+}
+
+.tours__show-all:hover::after {
+  background-color: rgba($base-primary, 0.1);
+}
+
+.tours__show-all:focus {
+  color: $base-primary;
+  outline: none;
+}
+
+.tours__show-all:focus::after {
+  background-color: $base-primary;
+}
+
+.tours__show-all:active {
+  color: $base-darker;
+}
+
+.tours__show-all:active::after {
+  background-color: $base-darker;
+}
+
+/* Disabled (в текущем макете ссылка активна, класс не применяется) */
+.tours__show-all--disabled {
+  color: $base-grey;
+  cursor: default;
+  pointer-events: none;
+}
+
+.tours__show-all--disabled::after {
+  background-color: $base-grey;
+}
+
 .tours__controls {
   @media (width < 768px) {
     display: none; /* Слайды на мобилке можно листать только свайпом, так как кнопки скрыты */
