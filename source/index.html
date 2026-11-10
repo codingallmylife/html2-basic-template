@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Lifetour — путешествия</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -18,9 +18,9 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="images/logotype-light.svg" width="142" height="42" alt="LIFETOUR.">
+        <img class="header__logo-image" src="images/logotype-light.svg" width="142" height="42" alt="Lifetour.">
       </a>
-      <nav class="header__navigation" id="menu">
+      <nav class="header__navigation" id="menu" aria-label="Основное меню">
         <div class="container">
           <ul class="header__list list-reset">
             <li class="header__item">
@@ -49,7 +49,7 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">LIFETOUR — путешествия</h1>
+    <h1 class="visually-hidden">Lifetour — путешествия</h1>
 
     <section class="promo">
       <ul class="promo__list list-reset">
@@ -474,8 +474,58 @@
   </main>
 
   <footer class="footer">
-    <!-- Здесь будет подвал -->
+    <div class="container">
+      <div class="footer__top">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-image" src="images/logotype-dark.svg" width="142" height="42" alt="Lifetour.">
+        </a>
+        <nav class="footer__navigation" aria-label="Навигация по сайту">
+          <ul class="footer__list list-reset">
+            <li class="footer__item">
+              <a class="footer__link" href="#tours">Туры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#training">Обучение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#about">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="footer__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__socials list-reset">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--vk" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--odnoklassniki" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--reddit" href="#">
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
   </footer>
+
   <script src="vendor/swiper-bundle.min.js"></script>
   <script src="scripts/index.js"></script>
 </body>

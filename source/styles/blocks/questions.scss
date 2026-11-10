@@ -62,7 +62,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: $base-black;
+  color: inherit;
   background-color: $base-white;
   border: 1px solid $transparent; /* В макете на мобилке рамки нет, прозрачная рамка - резерв под состояния из стайлгайда */
   border-radius: 2px;
