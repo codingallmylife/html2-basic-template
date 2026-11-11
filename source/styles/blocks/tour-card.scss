@@ -47,8 +47,8 @@
   margin: 0 0 12px;
 }
 
-.tour-card__top:first-child {
-  margin-bottom: 15px;
+.tour-card--caucasus .tour-card__top {
+  margin: 0 0 16px;
 }
 
 .tour-card__badge {
@@ -177,7 +177,7 @@
 
 @media (width >= 768px) {
   .tour-card__top,
-  .tour-card__top:first-child {
+  .tour-card--caucasus .tour-card__top {
     margin: 0 0 16px;
   }
 
@@ -196,12 +196,7 @@
   }
 }
 
-@media (width >= 768px) {
-  .tour-card__top,
-  .tour-card__top:first-child {
-    margin: 0 0 15px;
-  }
-
+@media (width >= 1440px) {
   .tour-card__badge {
     padding: 7px 12px 9px 34px;
   }
