@@ -72,12 +72,12 @@
 
 .questions__input:not(:disabled, :user-invalid):focus {
   border: 1px solid $base-black;
-  outline: none;
+  outline-offset: 2px;
 }
 
 .questions__input:user-invalid {
   border: 1px solid $base-red;
-  outline: none;
+  outline-offset: 2px;
 }
 
 .questions__input:disabled {

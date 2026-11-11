@@ -11,7 +11,6 @@ const navigationLinks = document.querySelectorAll('.header__link');
 if (toggle && navigation) {
   // Начальное состояние: меню скрыто
   navigation.classList.add('header__navigation--hidden');
-  toggle.classList.add('header__toggle--closed');
 
   // Общая функция закрытия меню
   const closeMenu = () => {
@@ -55,6 +54,10 @@ let startX = 0; // Координата X точки, где палец косн
 
 // Функция переключения слайда
 const showSlide = (index) => {
+  // Проверка: если слайда или буллета с таким индексом нет — выходим из функции
+  if (!slides[index] || !bullets[index]) {
+    return;
+  }
   // Убираем активный класс у всех слайдов и буллетов
   slides.forEach((item) => item.classList.remove('promo__item--active'));
   bullets.forEach((bullet) => bullet.classList.remove('promo__bullet--active'));
@@ -94,14 +97,20 @@ if (slides.length > 0 && bullets.length > 0) {
   });
 
   // Свайп: запоминаем точку касания, при отпускании сравниваем и переключаем слайд, если сдвиг больше минимального значения
-  if (window.matchMedia('(max-width: 1439px)').matches) { // свайп ограничиваем только для mobile и tablet
-    slides.forEach((item) => {
-      item.addEventListener('touchstart', (event) => { // Слушатель начала свайпа
+  // Вешаем слушатели всегда, а проверяем ширину экрана в момент свайпа
+  slides.forEach((item) => {
+    item.addEventListener('touchstart', (event) => { // Слушатель начала свайпа
+      if (window.matchMedia('(max-width: 1439px)').matches) { // свайп ограничиваем только для mobile и tablet
         startX = event.touches[0].clientX;
-      });
-      item.addEventListener('touchend', handleSwipeEnd); // Слушатель конца свайпа
+      }
     });
-  }
+
+    item.addEventListener('touchend', (event) => {
+      if (window.matchMedia('(max-width: 1439px)').matches) {
+        handleSwipeEnd(event);
+      }
+    });
+  });
 }
 
 // --------------------------------- Скрипт для Swiper в блоке Tours ---------------------------------

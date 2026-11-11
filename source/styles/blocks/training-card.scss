@@ -50,7 +50,9 @@
 }
 
 .training-card__social:focus {
-  border-color: $base-white;
+  border-color: $base-white; /* По стайлгайду */
+  outline: 2px solid $base-primary;
+  outline-offset: 2px;
 }
 
 .training-card__social:active {

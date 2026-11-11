@@ -177,7 +177,9 @@
 }
 
 .footer__social-link:focus {
-  border-color: $base-white;
+  border-color: $base-white; /* По стайлгайду */
+  outline: 2px solid $base-primary;
+  outline-offset: 2px;
 }
 
 .footer__social-link:active {

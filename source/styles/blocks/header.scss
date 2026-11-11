@@ -2,6 +2,7 @@
 .header {
   position: relative;
   z-index: 100;
+  overflow-wrap: break-woed;
   color: $base-white;
   background-color: $base-primary;
 }
@@ -74,13 +75,12 @@
 .header__phone {
   display: block;
   flex: 0 0 100%;
-  width: 100%;
+  width: $container-width-mobile;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
   text-align: right;
   text-decoration-line: none;
-  white-space: nowrap;
   color: $base-white;
 }
 

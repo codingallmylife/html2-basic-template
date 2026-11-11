@@ -76,6 +76,31 @@
   font-style: normal;
 }
 
+.contacts__link:hover {
+  color: rgba($base-primary, 0.5);
+}
+
+.contacts__link:focus {
+  color: $base-primary;
+  outline: none;
+}
+
+.contacts__link:active {
+  color: $base-darker;
+}
+
+/* Disabled (в текущем макете ссылки активны, класс не применяется)
+  Как использовать в HTML:
+  <a class="contacts__link contacts__link--disabled" href="tel:+79837454545" aria-disabled="true" tabindex="-1">+7 983 745-45-45</a>
+  <a class="contacts__link contacts__link--disabled" href="mailto:info@lifetour.com" aria-disabled="true" tabindex="-1">info@lifetour.com</a>
+*/
+.contacts__link--disabled,
+.contacts__address--disabled {
+  color: $base-grey;
+  cursor: default;
+  pointer-events: none;
+}
+
 .contacts picture {
   display: block;
   width: 100vw;
