@@ -62,7 +62,12 @@
   background-color: $base-white;
 }
 
-/* Disabled: серый (в текущем макете ссылки на соцсети активны, класс не применяется) */
+/* Disabled (в текущем макете ссылки на соцсети активны, класс не применяется)
+  Пример использования в HTML:
+  <a class="training-card__social training-card__social--disabled" href="#" aria-disabled="true" tabindex="-1">
+    <span class="visually-hidden">Профиль Александра Прокофьева в ВКонтакте.</span>
+  </a>
+*/
 .training-card__social--disabled {
   border-color: $base-black;
   opacity: 30%;

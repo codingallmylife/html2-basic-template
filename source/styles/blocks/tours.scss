@@ -89,7 +89,10 @@
   background-color: $base-darker;
 }
 
-/* Disabled (в текущем макете ссылка активна, класс не применяется) */
+/* Disabled (в текущем макете ссылка активна, класс не применяется)
+  Как использовать в HTML:
+  <a class="tours__show-all tours__show-all--disabled" href="#" aria-disabled="true" tabindex="-1">Показать все туры</a>
+*/
 .tours__show-all--disabled {
   color: $base-grey;
   cursor: default;

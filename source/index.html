@@ -28,8 +28,6 @@
       <nav class="header__navigation" id="menu" aria-label="Основное меню">
         <div class="container">
           <ul class="header__list list-reset">
-            <!-- Пример состояния disabled для ссылки главного меню (в текущем макете ссылки активны, класс не применяется): -->
-            <!-- <a class="header__link header__link--disabled" href="#" aria-disabled="true" tabindex="-1">Туры</a> -->
             <li class="header__item">
               <a class="header__link" href="#tours">Туры</a>
             </li>
@@ -51,8 +49,6 @@
           </ul>
         </div>
       </nav>
-      <!-- Состояние disabled для телефона (в текущем макете телефон активен, поэтому класс не применяется): -->
-      <!-- <a class="header__phone header__phone--disabled" href="tel:+78000000000" aria-disabled="true" tabindex="-1">8 800 000-00-00</a> -->
       <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
     </div>
   </header>
@@ -140,8 +136,8 @@
     <section class="tours" id="tours">
       <div class="container">
         <header class="tours__header">
-          <div class="section-title-container"> <!-- Заголовок с декоративным полупрозрачным дублем -->
-            <h2 class="section-title">Ближайшие туры</h2>
+          <div class="section-title"> <!-- Заголовок с декоративным полупрозрачным дублем -->
+            <h2 class="section-title__text">Ближайшие туры</h2>
             <span class="section-title__background section-title__background--tours" aria-hidden="true">Ближайшие туры</span>
           </div>
           <div class="slider-controls tours__controls">
@@ -290,16 +286,14 @@
           </ul>
         </div>
         <a class="tours__show-all" href="#">Показать все туры</a>
-        <!-- Состояние disabled для ссылки (в текущем макете ссылка активна, поэтому класс не применяется): -->
-        <!-- <a class="tours__show-all tours__show-all--disabled" href="#" aria-disabled="true" tabindex="-1">Показать все туры</a> -->
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="container">
         <div class="about__content">
-          <div class="section-title-container about__title-container">
-            <h2 class="section-title">О нас</h2>
+          <div class="section-title about__title-container">
+            <h2 class="section-title__text">О нас</h2>
             <span class="section-title__background section-title__background--about" aria-hidden="true">О нас</span>
           </div>
           <ul class="about__list list-reset">
@@ -327,8 +321,8 @@
     <section class="training" id="training">
       <div class="container">
         <header class="training__header">
-          <div class="section-title-container"> <!-- Заголовок с декоративным полупрозрачным дублем -->
-            <h2 class="section-title training__title">Обучение</h2>
+          <div class="section-title">
+            <h2 class="section-title__text training__title">Обучение</h2>
             <span class="section-title__background section-title__background--training" aria-hidden="true">Обучение</span>
           </div>
           <p class="training__description">Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
@@ -355,10 +349,6 @@
                 </picture>
                 <div class="training-card__top">
                   <h4 class="training-card__title">Александр Прокофьев</h4>
-                  <!-- Пример состояния disabled для ссылки на профиль инструктора в соцсети (в текущем макете ссылки активны, класс не применяется):
-                  <a class="training-card__social training-card__social--disabled" href="#" aria-disabled="true" tabindex="-1">
-                  <span class="visually-hidden">Профиль Александра Прокофьева в ВКонтакте.</span>
-                  </a> -->
                   <a class="training-card__social" href="#">
                     <span class="visually-hidden">Профиль Александра Прокофьева в ВКонтакте.</span>
                   </a>
@@ -446,7 +436,7 @@
           </div>
           <div class="questions__field">
             <label class="visually-hidden" for="email">Email</label>
-            <input class="questions__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Zа-яА-Я]{2,}" required>
+            <input class="questions__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Za-яА-Я]{2,}" required>
           </div>
           <button class="questions__submit button" type="submit">Отправить</button>
         </form>
@@ -456,8 +446,8 @@
     <section class="contacts" id="contacts">
       <div class="container contacts__container">
         <div class="contacts__content">
-          <div class="section-title-container contacts__title-container">
-            <h2 class="section-title">Контакты</h2>
+          <div class="section-title contacts__title-container">
+            <h2 class="section-title__text">Контакты</h2>
             <span class="section-title__background section-title__background--contacts" aria-hidden="true">Контакты</span>
           </div>
           <p class="contacts__description">Свяжитесь с нами любым удобным для&nbsp;вас способом или приходите к&nbsp;нам&nbsp;в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
@@ -496,8 +486,6 @@
         </a>
         <nav class="footer__navigation" aria-label="Навигация по сайту">
           <ul class="footer__list list-reset">
-            <!-- Пример состояния disabled для ссылки навигации в футере (в текущем макете ссылки активны, класс не применяется): -->
-            <!-- <a class="footer__link footer__link--disabled" href="#" aria-disabled="true" tabindex="-1">Туры</a> -->
             <li class="footer__item">
               <a class="footer__link" href="#tours">Туры</a>
             </li>
@@ -518,15 +506,9 @@
             </li>
           </ul>
         </nav>
-        <!-- Состояние disabled для телефона в футере (в текущем макете телефон активен, поэтому класс не применяется): -->
-        <!-- <a class="footer__phone footer__phone--disabled" href="tel:+78000000000" aria-disabled="true" tabindex="-1">8 800 000-00-00</a> -->
         <a class="footer__phone" href="tel:+78000000000">8 800 000-00-00</a>
       </div>
       <div class="footer__bottom">
-        <!-- Пример состояния disabled для соцсетей (в текущем макете ссылки активны, класс не применяется):
-        <a class="footer__social-link footer__social-link--vk footer__social-link--disabled" href="#" aria-disabled="true" tabindex="-1">
-        <span class="visually-hidden">ВКонтакте</span>
-        </a> -->
         <ul class="footer__socials list-reset">
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vk" href="#">
@@ -544,8 +526,6 @@
             </a>
           </li>
         </ul>
-        <!-- Состояние disabled для копирайта в футере (в текущем макете ссылка активна, поэтому класс не применяется): -->
-        <!-- <a class="footer__copyright footer__copyright--disabled" href="#" aria-disabled="true" tabindex="-1">Политика конфиденциальности</a> -->
         <a class="footer__copyright" href="#">Политика конфиденциальности</a>
       </div>
     </div>

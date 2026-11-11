@@ -97,7 +97,10 @@
   color: $base-darker;
 }
 
-/* Disabled (в текущем макете телефон активен, класс не применяется) */
+/* Disabled (в текущем макете ссылка активна, класс не применяется)
+  Как использовать в HTML:
+  <a class="header__phone header__phone--disabled" href="tel:+78000000000" aria-disabled="true" tabindex="-1">8 800 000-00-00</a>
+*/
 .header__phone--disabled {
   color: $base-grey;
   cursor: default;
@@ -195,7 +198,10 @@
   opacity: 0%;
 }
 
-/* Disabled (в макете ссылки вв меню хедера активны, класс не применяется) */
+/* Disabled (в макете ссылки в меню хедера активны, класс не применяется)
+  Пример использования в HTML:
+  <a class="header__link header__link--disabled" href="#" aria-disabled="true" tabindex="-1">Туры</a>
+*/
 .header__link--disabled {
   color: $base-grey;
   cursor: default;

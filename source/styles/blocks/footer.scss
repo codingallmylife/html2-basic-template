@@ -104,7 +104,10 @@
   opacity: 0%;
 }
 
-/* Disabled (ссылки в навигации футера в макете активны, класс не применяется) */
+/* Disabled (ссылки в навигации футера в макете активны, класс не применяется)
+  Пример использования в HTML:
+  <a class="footer__link footer__link--disabled" href="#" aria-disabled="true" tabindex="-1">Туры</a>
+*/
 .footer__link--disabled {
   color: $base-grey;
   cursor: default;
@@ -186,7 +189,12 @@
   background-color: $base-white;
 }
 
-/* Disabled: серый (в текущем макете ссылки на соцсети активны, класс не применяется) */
+/* Disabled (в текущем макете ссылки на соцсети активны, класс не применяется)
+  Пример использования в HTML:
+  <a class="footer__social-link footer__social-link--vk footer__social-link--disabled" href="#" aria-disabled="true" tabindex="-1">
+    <span class="visually-hidden">ВКонтакте</span>
+  </a>
+*/
 .footer__social-link--disabled {
   border-color: $base-black;
   opacity: 30%;
@@ -214,7 +222,10 @@
   color: $base-darker;
 }
 
-/* Disabled (в текущем макете ссылка активна, класс не применяется) */
+/* Disabled (в текущем макете ссылка активна, класс не применяется)
+  Как использовать в HTML:
+  <a class="footer__copyright footer__copyright--disabled" href="#" aria-disabled="true" tabindex="-1">Политика конфиденциальности</a>
+*/
 .footer__copyright--disabled {
   color: $base-grey;
   cursor: default;
@@ -302,7 +313,10 @@
     color: $base-darker;
   }
 
-  /* Disabled (в текущем макете телефон активен, класс не применяется) */
+  /* Disabled (в текущем макете ссылка активна, класс не применяется)
+    Как использовать в HTML:
+    <a class="footer__phone footer__phone--disabled" href="tel:+78000000000" aria-disabled="true" tabindex="-1">8 800 000-00-00</a>
+  */
   .footer__phone--disabled {
     color: $base-grey;
     cursor: default;

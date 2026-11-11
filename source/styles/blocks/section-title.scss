@@ -1,5 +1,9 @@
 .section-title {
   position: relative;
+}
+
+.section-title__text {
+  position: relative;
   z-index: 1;
   margin: 0;
   font-size: 22px;
@@ -30,7 +34,7 @@
 }
 
 @media (width >= 768px) {
-  .section-title {
+  .section-title__text {
     font-size: 25px;
     line-height: 25px;
   }
@@ -47,7 +51,7 @@
 }
 
 @media (width >= 1440px) {
-  .section-title {
+  .section-title__text {
     font-size: 35px;
     line-height: 35px;
   }
