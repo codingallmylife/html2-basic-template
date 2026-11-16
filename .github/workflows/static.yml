@@ -30,7 +30,7 @@ jobs:
         run: npm install 
 
       - name: Build with Gulp
-        run: npx gulp build 
+        run: npx gulp buildProd
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
