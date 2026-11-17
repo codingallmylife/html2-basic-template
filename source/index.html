@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" rel="preload" crossorigin="anonymous">
-  <link href="vendor/swiper-bundle.min.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon" type="image/x-icon">
   <link href="images/favicon.png" rel="icon" type="image/png" sizes="32x32">
@@ -122,13 +121,13 @@
       <!-- Пагинация (буллеты) -->
       <div class="promo__pagination">
         <button class="promo__bullet promo__bullet--active" type="button">
-          <span class="visually-hidden">Слайд 1</span>
+          <span class="visually-hidden">Слайд 1.</span>
         </button>
         <button class="promo__bullet" type="button">
-          <span class="visually-hidden">Слайд 2</span>
+          <span class="visually-hidden">Слайд 2.</span>
         </button>
         <button class="promo__bullet" type="button">
-          <span class="visually-hidden">Слайд 3</span>
+          <span class="visually-hidden">Слайд 3.</span>
         </button>
       </div>
     </section>
@@ -142,10 +141,10 @@
           </div>
           <div class="slider-controls tours__controls">
             <button class="slider-controls__button slider-controls__button--previous" type="button" disabled>
-              <span class="visually-hidden">Предыдущий тур</span>
+              <span class="visually-hidden">Предыдущий тур.</span>
             </button>
             <button class="slider-controls__button slider-controls__button--next" type="button">
-              <span class="visually-hidden">Следующий тур</span>
+              <span class="visually-hidden">Следующий тур.</span>
             </button>
           </div>
         </header>
@@ -170,7 +169,9 @@
                   <ul class="tour-card__info list-reset">
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Сложность:</span>
-                      <div class="tour-card__stars tour-card__stars--four" role="img" aria-label="4 из 5"></div>
+                      <div class="tour-card__stars tour-card__stars--four" role="img">
+                        <span class="visually-hidden">4 из 5.</span>
+                      </div>
                     </li>
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Даты набора:</span>
@@ -203,7 +204,9 @@
                   <ul class="tour-card__info list-reset">
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Сложность:</span>
-                      <div class="tour-card__stars tour-card__stars--three" role="img" aria-label="3 из 5"></div>
+                      <div class="tour-card__stars tour-card__stars--three" role="img">
+                        <span class="visually-hidden">3 из 5.</span>
+                      </div>
                     </li>
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Даты набора:</span>
@@ -236,7 +239,9 @@
                   <ul class="tour-card__info list-reset">
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Сложность:</span>
-                      <div class="tour-card__stars tour-card__stars--four" role="img" aria-label="4 из 5"></div>
+                      <div class="tour-card__stars tour-card__stars--four" role="img">
+                        <span class="visually-hidden">4 из 5.</span>
+                      </div>
                     </li>
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Даты набора:</span>
@@ -269,7 +274,9 @@
                   <ul class="tour-card__info list-reset">
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Сложность:</span>
-                      <div class="tour-card__stars tour-card__stars--five" role="img" aria-label="5 из 5"></div>
+                      <div class="tour-card__stars tour-card__stars--five" role="img">
+                        <span class="visually-hidden">5 из 5.</span>
+                      </div>
                     </li>
                     <li class="tour-card__info-item">
                       <span class="tour-card__info-name">Даты набора:</span>
@@ -331,10 +338,10 @@
           <h3 class="training__subtitle">Наши инструкторы</h3>
           <div class="slider-controls training__controls">
             <button class="slider-controls__button slider-controls__button--previous" type="button" disabled>
-              <span class="visually-hidden">Предыдущий инструктор</span>
+              <span class="visually-hidden">Предыдущий инструктор.</span>
             </button>
             <button class="slider-controls__button slider-controls__button--next" type="button">
-              <span class="visually-hidden">Следующий инструктор</span>
+              <span class="visually-hidden">Следующий инструктор.</span>
             </button>
           </div>
         </div>
@@ -531,8 +538,8 @@
     </div>
   </footer>
 
-  <script src="vendor/swiper-bundle.min.js"></script>
-  <script src="scripts/index.js"></script>
+  <script src="vendor/swiper-bundle.min.js" defer></script>
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
